@@ -31,11 +31,14 @@ jobs:
           git config user.email "<>"
           git fetch --all
       - run: |
+          cp -R mafia mafiafiles
+      - run: |
           git switch release
           rm -r scripts/
           mkdir -p scripts/
           mv dist/boycotto.js scripts/boycotto.js
-          mv mafia/dependencies.txt dependencies.txt
+          rm dependencies.txt
+          mv mafiafiles/dependencies.txt dependencies.txt
           git add dependencies.txt
           git add scripts/
           git commit -m "Build Mafia files for commit $GITHUB_SHA"
@@ -44,7 +47,7 @@ jobs:
           git switch release-data
           rm -r data/
           mkdir -p data/
-          mv mafia/data/boycotto_stores.txt data/boycotto_stores.txt
+          mv mafiafiles/data/boycotto_stores.txt data/boycotto_stores.txt
           git add data/
           git commit -m "Build Data file for commit $GITHUB_SHA"
           git push origin release-data
