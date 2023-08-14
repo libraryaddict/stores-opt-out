@@ -1,0 +1,33 @@
+{
+    "name": "kol-boycotto",
+    "version": "0.0.1",
+    "license": "MIT",
+    "main": "dist/boycotto.js",
+    "types": "dist/boycotto.d.ts",
+    "files": [
+        "tsconfig.json",
+        "dist/*"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npm run build:types && npm run build:js",
+        "build:types": "tsc",
+        "build:js": "webpack",
+        "watch": "webpack --watch --progress"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.14.8",
+        "@babel/core": "^7.15.0",
+        "@babel/plugin-proposal-class-properties": "^7.14.5",
+        "@babel/plugin-proposal-decorators": "^7.14.5",
+        "@babel/preset-env": "^7.15.0",
+        "@babel/preset-typescript": "^7.12.7",
+        "babel-loader": "^8.2.2",
+        "typescript": "^4.0.3",
+        "webpack": "^5.8.0",
+        "webpack-cli": "^4.2.0"
+    },
+    "dependencies": {
+        "kolmafia": "^5.27528.0"
+    }
+}
