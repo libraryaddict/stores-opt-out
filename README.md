@@ -31,7 +31,7 @@ You will need to provide your user ID, your name, and the reason you want it add
 Why do we want the reason? So if we look at the list, we can point back at it and say 'They only want to host ARs in games (na) and don't want people buying tickets automatically'.
 We don't want people going "Oh, why does HalfDayLooper (#12345) have his ID in there? He said he loves using scripts". Instead you'd say "Huh, so he stocks ascension stuff but only wants stunt runs to be buying from him"
 
-The list is found here: [a relative link](mafia/data/boycotto_stores.txt)
+[The list is found here](mafia/data/boycotto_stores.txt)
 
 # How do I add this to my script?
 
