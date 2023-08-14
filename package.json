@@ -2,6 +2,8 @@
     "name": "boycotto",
     "version": "0.0.1",
     "license": "MIT",
+    "description": "Script that acts as a library to enable the usage of boycotto inside another script",
+    "repository": "https://github.com/loathers/boycotto",
     "main": "dist/boycotto.js",
     "types": "dist/boycotto.d.ts",
     "files": [

@@ -3,13 +3,13 @@
 There are two different methods, depending on your usecase.
 If you want this as a standalone script, you will use
 
-`git checkout loathers/KolBoycotto release`
+`git checkout loathers/boycotto release`
 
 This will install both the data file, and the script. The script itself can be run as a standalone with the arguments `start` and `stop`
 
 Otherwise to install just the data file but not the standalone script, you will use
 
-`git checkout loathers/KolBoycotto release-data`
+`git checkout loathers/boycotto release-data`
 
 # What is this?
 
@@ -33,7 +33,7 @@ We don't want people going "Oh, why does HalfDayLooper (#12345) have his ID in t
 
 # How do I add this to my script?
 
-You will need a `dependencies.txt` in the root file of your script installation files. Add `github loathers/KolBoycotto release-data` to it.
+You will need a `dependencies.txt` in the root file of your script installation files. Add `github loathers/boycotto release-data` to it.
 
 Then you will run either `yarn install boycotto` if you are using yarn, or `npm install boycotto` if you're using npm.
 
