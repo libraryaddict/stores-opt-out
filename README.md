@@ -1,13 +1,15 @@
 # How do I install this?
 
-`git checkout libraryaddict/KolBoycotto release-data`
+There are two different methods, depending on your usecase.
+If you want this as a standalone script, you will use
 
-This will install the data file, but not the script itself.
-To install the script, use
-
-`git checkout libraryaddict/KolBoycotto release`
+`git checkout loathers/KolBoycotto release`
 
 This will install both the data file, and the script. The script itself can be run as a standalone with the arguments `start` and `stop`
+
+Otherwise to install just the data file but not the standalone script, you will use
+
+`git checkout loathers/KolBoycotto release-data`
 
 # What is this?
 
@@ -31,9 +33,9 @@ We don't want people going "Oh, why does HalfDayLooper (#12345) have his ID in t
 
 # How do I add this to my script?
 
-You will need a `dependencies.txt` in the root file of your script installation files. Add `github libraryaddict/KolBoycotto release-data` to it.
+You will need a `dependencies.txt` in the root file of your script installation files. Add `github loathers/KolBoycotto release-data` to it.
 
-Then you will run either `yarn install <TBA>` if you are using yarn, or `npm install <TBA>` if you're using npm.
+Then you will run either `yarn install boycotto` if you are using yarn, or `npm install boycotto` if you're using npm.
 
 Given how mall prices work in mafia, you'll want to have everything looked up using this script. Else you may think one item is in mall for 400 meat, but the item was in a store we want to ignore and the cheapest is actually 9000 meat.
 
