@@ -39,8 +39,8 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  main: () => (/* binding */ main),
-  run: () => (/* binding */ run)
+  boycotto: () => (/* binding */ boycotto),
+  main: () => (/* binding */ main)
 });
 
 ;// CONCATENATED MODULE: external "kolmafia"
@@ -194,7 +194,7 @@ function end() {
   (0,external_kolmafia_namespaceObject.setProperty)("forbiddenStores", getCleanedProperty("SILENT"));
 }
 
-function run(runnable) {
+function boycotto(runnable) {
   try {
     start();
 
