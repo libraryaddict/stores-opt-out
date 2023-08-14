@@ -10,11 +10,11 @@ function getIgnores(): string[] {
 
   for (const line of data) {
     // Ignore empty lines or lines starting with a pound symbol
-    if (line.startsWith("#") || line.length == 0) {
+    if (line.startsWith("#") || line.trim().length == 0) {
       continue;
     }
 
-    const match = line.match(/^ID: (\d+)$/);
+    const match = line.match(/^ID: (\d+) *$/);
 
     if (match == null) {
       print(
