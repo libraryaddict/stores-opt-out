@@ -1,3 +1,9 @@
+# Changes should follow the below format to keep this readable. But remove the # for `ID: `
+
+# RichMcFace, requested dd/MM/yyyy
+# Reason: Doesn't like garbo buying their mall min source terminals
+# ID: 12345
+
 # Mistress of the Obvious, requested 10/07/2023
 # Reason: Doesn't want scripts buying from their store
 ID: 845708
