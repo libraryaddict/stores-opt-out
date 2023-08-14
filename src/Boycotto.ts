@@ -24,10 +24,7 @@ function getIgnores(): string[] {
       continue;
     }
 
-    const userId = match[1];
-    const reason = match[2];
-
-    userIds.push(userId);
+    userIds.push(match[1]);
   }
 
   return userIds;
