@@ -40,7 +40,7 @@ jobs:
           mv -f mafiafiles/dependencies.txt dependencies.txt
           git add dependencies.txt
           git add scripts/
-          git commit -m "Build Mafia files for commit $GITHUB_SHA"
+          git diff-index --quiet HEAD || git commit -m "Build Mafia files for commit $GITHUB_SHA"
           git push origin release
       - run: |
           git switch release-data
@@ -48,5 +48,5 @@ jobs:
           mkdir -p data/
           mv mafiafiles/data/boycotto_stores.txt data/boycotto_stores.txt
           git add data/
-          git commit -m "Build Data file for commit $GITHUB_SHA"
+          git diff-index --quiet HEAD || git commit -m "Build Data file for commit $GITHUB_SHA"
           git push origin release-data
