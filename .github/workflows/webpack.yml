@@ -37,8 +37,7 @@ jobs:
           rm -r scripts/
           mkdir -p scripts/
           mv dist/boycotto.js scripts/boycotto.js
-          rm dependencies.txt
-          mv mafiafiles/dependencies.txt dependencies.txt
+          mv -f mafiafiles/dependencies.txt dependencies.txt
           git add dependencies.txt
           git add scripts/
           git commit -m "Build Mafia files for commit $GITHUB_SHA"
