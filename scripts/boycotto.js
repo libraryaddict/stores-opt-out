@@ -58,11 +58,11 @@ function getIgnores() {
 
       data),_step;try {for (_iterator.s(); !(_step = _iterator.n()).done;) {var line = _step.value;
       // Ignore empty lines or lines starting with a pound symbol
-      if (line.startsWith("#") || line.length == 0) {
+      if (line.startsWith("#") || line.trim().length == 0) {
         continue;
       }
 
-      var match = line.match(/^ID: (\d+)$/);
+      var match = line.match(/^ID: (\d+) *$/);
 
       if (match == null) {
         (0,external_kolmafia_namespaceObject.print)("Invalid line found while loading list for Boycotto: ".concat(
