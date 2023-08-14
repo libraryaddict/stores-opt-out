@@ -146,7 +146,7 @@ function end() {
   setProperty("forbiddenStores", getCleanedProperty("SILENT"));
 }
 
-export function run(runnable: () => void) {
+export function boycotto(runnable: () => void) {
   try {
     start();
 

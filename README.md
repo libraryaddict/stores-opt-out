@@ -46,8 +46,8 @@ Example.
 ```
 // Our calling function
 export function main() {
-    // We invoke `runBoycotto` with a parameter which is a runnable
-    runBoycotto(() => {
+    // We invoke `boycotto` with a parameter which is a runnable
+    boycotto(() => {
             // All the stores have been added to `forbiddenStores`, we're safe
 
             // The price is reported as 5000 meat. If we checked this outside of the runnable, it would be 100 meat
