@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    "stores-opt-out": "./src/StoresOptOut.ts"
+    "stores-opt-out": "./src/stores-opt-out.ts"
   },
   mode: "production",
   module: {
