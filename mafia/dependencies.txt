@@ -1,1 +1,1 @@
-github libraryaddict/KolBoycotto release-data
+github libraryaddict/stores-opt-out release-data

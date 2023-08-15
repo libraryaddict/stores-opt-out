@@ -36,7 +36,7 @@ jobs:
           git switch release
           rm -r scripts/
           mkdir -p scripts/
-          mv dist/boycotto.js scripts/boycotto.js
+          mv dist/stores-opt-out.js scripts/stores-opt-out.js
           mv -f mafiafiles/dependencies.txt dependencies.txt
           git add dependencies.txt
           git add scripts/
@@ -46,7 +46,7 @@ jobs:
           git switch release-data
           rm -r data/
           mkdir -p data/
-          mv mafiafiles/data/boycotto_stores.txt data/boycotto_stores.txt
+          mv mafiafiles/data/stores-opt-out.txt data/stores-opt-out.txt
           git add data/
           git diff-index --quiet HEAD || git commit -m "Build Data file for commit $GITHUB_SHA"
           git push origin release-data

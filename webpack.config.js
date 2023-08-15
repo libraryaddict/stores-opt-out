@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    boycotto: "./src/Boycotto.ts",
+    "stores-opt-out": "./src/StoresOptOut.ts"
   },
   mode: "production",
   module: {
@@ -11,22 +11,22 @@ module.exports = {
         // Include ts, tsx, js, and jsx files.
         test: /\.(ts|js)x?$/,
         //exclude: /node_modules/,
-        loader: "babel-loader",
-      },
-    ],
+        loader: "babel-loader"
+      }
+    ]
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: [".tsx", ".ts", ".js"]
   },
   output: {
     filename: "[name].js",
     path: path.join(__dirname, "./dist/"),
-    libraryTarget: "commonjs",
+    libraryTarget: "commonjs"
   },
   externals: {
-    kolmafia: "commonjs kolmafia",
+    kolmafia: "commonjs kolmafia"
   },
   optimization: {
-    minimize: false,
-  },
+    minimize: false
+  }
 };
